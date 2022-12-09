@@ -41,3 +41,8 @@ spanning-tree mode rapid-pvst
 int e0/0.2  
 encapsulation dot1Q 2  
 ip address 10.0.10.1 255.255.255.0  
+
+Также у меня возникла проблема с duplex (на роутере был full duplex, на коммутаторе half duplex).  
+Решалось комадной на роутере:  
+int e0/0  
+duplex half  
