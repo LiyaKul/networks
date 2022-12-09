@@ -19,22 +19,22 @@ e0/0-2 у коммутатора уровня распределения пер�
 ![](images/11.png)
 Конфиги доступны в папке configs.
 
-Команды для ethernet между коммутаторами и/или роутером:
+Команды для ethernet между коммутаторами и/или роутером:  
 int range e0/0-2 (или e0/0-1)  
 switchport trunk encapsulation dot1q  
 switchport trunk allowed vlan 2-3  
 
 Команды для ethernet между коммутатором и клиентом:  
 int e0/2  
-switchport mode access 
+switchport mode access  
 switchport access vlan 2 (or 3)  
 
 Настройка корня дерева:  
 spanning-tree vlan 1-3 root primary 
 
 Настройка spanning-tree и vlan:  
-vtp mode transparent 
-spanning-tree mode rapid-pvst 
+vtp mode transparent  
+spanning-tree mode rapid-pvst  
 (+write)  
 
 Настройка e0/0.2 для роутера (e0/0.3 аналогично):  
