@@ -36,7 +36,7 @@ spanning-tree mode rapid-pvst
 
 Настройка e0/0.2 для роутера (e0/0.3 аналогично):  
 int e0/0.2  
-encapsulation dot1Q 10
+encapsulation dot1Q 10  
 ip address 10.0.10.1 255.255.255.0  
 
 Также у меня возникла проблема с duplex (на роутере был full duplex, на коммутаторе half duplex).  
