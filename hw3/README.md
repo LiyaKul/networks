@@ -10,7 +10,7 @@ network 10.0.10.0 255.255.255.0 - задаем сеть и маску клиен
 Аналогично со второй подсетью.
 
 Теперь настроим nat. Для поддержания количества клиентов >10 используем pat. На gateway (R13):\
-ip nat pool pool10 10.0.10.11 10.0.10.255 netmask 255.255.255.0 - выставляем pat для pool10ё
+ip nat pool pool10 10.0.10.11 10.0.10.255 netmask 255.255.255.0 - выставляем pat для pool10\
 access-list 100 permit 10.0.10.0 0.0.0.255 - выставляем access-list на сеть\
 ip nat inside source list 100 pool pool10 overload\
 int e0/0\
